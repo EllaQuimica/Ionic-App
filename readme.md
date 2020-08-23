@@ -26,7 +26,7 @@ ionic build
 
 ## Screenshots
 ![](https://ibb.co/bg6XqWs)
-![](https://ibb.co/2Nfv8N9)
+![](https://i.ibb.co/jv8DB6y/Captura-de-pantalla-2020-08-23-13-03-09.png)
 ![](https://ibb.co/5RNdPcJ)
 
 
