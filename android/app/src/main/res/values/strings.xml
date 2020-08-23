@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Music Ionic</string>
+    <string name="title_activity_main">Music Ionic</string>
+    <string name="package_name">music.ionic.com</string>
+    <string name="custom_url_scheme">music.ionic.com</string>
+</resources>
