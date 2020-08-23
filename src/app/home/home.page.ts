@@ -1,21 +1,18 @@
-import { Component, OnInit } from "@angular/core";
-import { MusicService } from '../services/music.service'
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-home",
   templateUrl: "home.page.html",
   styleUrls: ["home.page.scss"]
 })
-export class HomePage implements OnInit {
-
-  public items: any;
-
-  constructor( private musicService: MusicService) { }
-
-  ngOnInit() {
-    this.musicService.getAllArtists().subscribe(res =>  {
-      this.items = res.artists.artist;
-    });
-  }
-
+export class HomePage {
+  artists = [{}, {}, {}, {}, {}, {}, {}, {}];
+  slideOps = {
+    initialSlide: 1,
+    slidesPerView: 4,
+    centeredSlides: true,
+    speed: 400
+  };
+  constructor() {}
 }
+

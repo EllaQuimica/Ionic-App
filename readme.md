@@ -1,6 +1,6 @@
-#Music Ionic App
+# Music Ionic App
 
-## Development
+## How to use?
 
 After you have cloned the repo you need to have installed the last version if Ionic in your machine:
 
@@ -24,3 +24,6 @@ ionic serve
 ionic build
 ```
 
+## Screenshots
+![](https://ibb.co/smKyTCN)
+![](https://ibb.co/3T8gwQ6)

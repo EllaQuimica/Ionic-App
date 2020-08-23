@@ -5,7 +5,32 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
- <h1>vacioooooo</h1>
+<ion-content padding>
+  <h1>Artistas</h1>
+  <ion-slides [options]="slideOps" *ngIf="artists.length">
+    <ion-slide *ngFor="let artstis of artists">
+      <ion-avatar>
+        <img src="https://via.placeholder.com/150" />
+        <span>artista</span>
+      </ion-avatar>
+    </ion-slide>
+  </ion-slides>
+  <h1>Canciones</h1>
+  <ion-slides [options]="slideOps" *ngIf="artists.length">
+    <ion-slide *ngFor="let artstis of artists">
+      <ion-avatar>
+        <img src="https://via.placeholder.com/150" />
+        <span>canción</span>
+      </ion-avatar>
+    </ion-slide>
+  </ion-slides>
+  <h1>Álbum</h1>
+  <ion-slides [options]="slideOps" *ngIf="artists.length">
+    <ion-slide *ngFor="let artstis of artists">
+      <ion-avatar>
+        <img src="https://via.placeholder.com/150" />
+        <span>álbum</span>
+      </ion-avatar>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
