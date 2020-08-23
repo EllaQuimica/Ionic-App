@@ -1,4 +1,4 @@
-# Music Ionic App
+# Ionic App
 
 ## How to use?
 
@@ -25,5 +25,8 @@ ionic build
 ```
 
 ## Screenshots
-![](https://ibb.co/smKyTCN)
-![](https://ibb.co/3T8gwQ6)
+![]()
+![]()
+
+
+El icono implementado en el logo fue diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
