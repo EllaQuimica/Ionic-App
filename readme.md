@@ -25,8 +25,9 @@ ionic build
 ```
 
 ## Screenshots
-![]()
-![]()
+![](https://ibb.co/bg6XqWs)
+![](https://ibb.co/2Nfv8N9)
+![](https://ibb.co/5RNdPcJ)
 
 
 El icono implementado en el logo fue diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
