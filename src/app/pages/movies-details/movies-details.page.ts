@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService, SearchType } from './../../services/movie.service';
-import { Observable } from 'rxjs';
+import { MovieService } from './../../services/movie.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-movies-details',
@@ -9,17 +9,21 @@ import { Observable } from 'rxjs';
 })
 export class MoviesDetailsPage implements OnInit {
 
-  results: Observable<any>;
-  searchTerm: string = '';
-  type: SearchType = SearchType.all;
+  information = null;
 
-  constructor(private movieService: MovieService) { }
+  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService) { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    let id = this.activatedRoute.snapshot.paramMap.get('id');
+ 
+    this.movieService.getDetails(id).subscribe(result => {
+      console.log('details: ', result);
+      this.information = result;
+    });
+  }
 
-  searchChanged() {
-    // Call our service function which returns an Observable
-    this.results = this.movieService.searchData(this.searchTerm, this.type);
+  openWebsite() {
+    window.open(this.information.Website, '_blank');
   }
 
 }

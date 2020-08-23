@@ -1,6 +1,7 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>My Movie Search</ion-title>
+<ion-header padding>
+  <ion-toolbar color="success" >
+    <ion-icon ></ion-icon>
+      <img src="assets/img/logo.png" alt="My App Ionic" />
   </ion-toolbar>
 </ion-header>
  
@@ -8,10 +9,10 @@
  
   <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="searchChanged($event)"></ion-searchbar>
  
-  <ion-item>
-    <ion-label>Select Searchtype</ion-label>
-    <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
-      <ion-select-option value="">All</ion-select-option>
+  <ion-item >
+    <ion-label color="success" >Select Searchtype</ion-label>
+    <ion-select  [(ngModel)]="type" (ionChange)="searchChanged($event)">
+      <ion-select-option value="" >All</ion-select-option>
       <ion-select-option value="movie">Movie</ion-select-option>
       <ion-select-option value="series">Series</ion-select-option>
       <ion-select-option value="episode">Episode</ion-select-option>
@@ -30,9 +31,9 @@
         {{ item.Year }}
       </ion-label>
  
-      <ion-icon slot="end" *ngIf="item.Type == 'movie'" name="videocam"></ion-icon>
-      <ion-icon slot="end" *ngIf="item.Type == 'series'" name="tv"></ion-icon>
-      <ion-icon slot="end" *ngIf="item.Type == 'game'" name="logo-game-controller-b"></ion-icon>
+      <ion-icon slot="end" *ngIf="item.Type == 'movie'" name="videocam-outline"></ion-icon>
+      <ion-icon slot="end" *ngIf="item.Type == 'series'" name="tv-outline"></ion-icon>
+      <ion-icon slot="end" *ngIf="item.Type == 'game'" name="game-controller-outline"></ion-icon>
  
     </ion-item>
  
